@@ -10,7 +10,7 @@ const Home = () => {
       className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 bg-black text-white relative"
     >
       {/* Social Media - Left Fixed (hidden on mobile) */}
-      <div className="hidden ml-10 md:flex flex-col gap-6 fixed left-4 top-1/2 -translate-y-1/2 z-20">
+      <div className="hidden md:ml-10 md:flex flex-col gap-6 fixed left-4 top-1/2 -translate-y-1/2 z-20">
         <a
           href="https://github.com/sanjiban-dey-2000/"
           target="_blank"
@@ -35,8 +35,8 @@ const Home = () => {
       </div>
 
       {/* Left Content */}
-      <div className="w-full ml-20 md:w-1/2 z-10 text-center md:text-left">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+      <div className="w-full md:ml-20 md:w-1/2 z-10 text-center md:text-left">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
           Hi, I'm Sanjiban Dey
         </h1>
         <TypeAnimation
