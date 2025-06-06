@@ -8,14 +8,10 @@ const Contact = () => {
         message:"",
     });
 
-    const SERVICE_ID="service_iu6ovjy";
-    const TEMPLATE_ID="template_t6b2fjm";
-    const PUBLIC_KEY="wZdgOtktAHivjzJWQ";
-
     const handleSubmit=(e)=>{
         e.preventDefault();
 
-        emailjs.sendForm(SERVICE_ID,TEMPLATE_ID,e.target,PUBLIC_KEY).then((result)=>{
+        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID,import.meta.env.VITE_TEMPLATE_ID,e.target,import.meta.env.VITE_PUBLIC_KEY).then((result)=>{
             alert("Message Sent");
             setFormData({name:"",email:"",message:""});
         }).catch(()=>{
