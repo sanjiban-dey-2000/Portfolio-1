@@ -80,7 +80,7 @@ const Home = () => {
             <div className="relative mx-auto">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-600 to-blue-500 animate-pulse blur-lg scale-105"></div>
                 <img
-                    src="/hero.png" // Replace with your image path
+                    src="/profile.jpg" // Replace with your image path
                     alt="Profile"
                     className="relative w-56 h-56 md:w-100 md:h-100 object-cover rounded-full border-4 border-blue-500 shadow-xl z-10"
                 />
