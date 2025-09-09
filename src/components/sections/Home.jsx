@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col sm:pt-15 md:flex-row items-center justify-center px-6 md:px-20 bg-black text-white relative"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 bg-black text-white relative pt-24 md:pt-20"
     >
       {/* Social Media - Left Fixed (hidden on mobile) */}
       <div className="hidden md:ml-10 md:flex flex-col gap-6 fixed left-4 top-1/2 -translate-y-1/2 z-20">
