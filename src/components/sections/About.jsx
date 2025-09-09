@@ -14,17 +14,28 @@ const techLogos = {
 
   'Node.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
   'Express.js': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
+  'Spring Boot': 'https://www.vectorlogo.zone/logos/springio/springio-icon.svg',
+  'Spring Data JPA': 'https://www.vectorlogo.zone/logos/springio/springio-icon.svg',
+  Hibernate: 'https://hibernate.org/images/hibernate-logo.svg',
+  'Spring Security': 'https://www.vectorlogo.zone/logos/springio/springio-icon.svg',
 
-  MongoDB: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
   MySQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+  MongoDB: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+  PostgreSQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
 
   Git: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
   Github: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
-  VSCode: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+  'VSCode': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+  'IntelliJ IDEA': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg',
+  Maven: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg',
+  Gradle: 'https://gradle.org/images/gradle-knowledge-graph-logo.png',
   Vercel: 'https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg',
   Netlify: 'https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg',
 
-  Postman: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg',
+  Postman: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
+  'RESTful APIs': 'https://cdn-icons-png.flaticon.com/512/2965/2965358.png',
+  DSA: 'https://cdn-icons-png.flaticon.com/512/2721/2721292.png',
+  'Machine Learning': 'https://cdn-icons-png.flaticon.com/512/1048/1048947.png',
 };
 
 const renderTechItem = (tech) => (
@@ -38,12 +49,12 @@ const renderTechItem = (tech) => (
 );
 
 const About = () => {
-  const programmingLanguages = ['Java', 'C', 'C++', 'Javascript'];
+  const programmingLanguages = ['Java', 'Javascript', 'C', 'C++'];
   const frontendSkills = ['HTML5', 'CSS', 'TailwindCSS', 'Bootstrap', 'React'];
-  const backendSkills = ['Node.js', 'Express.js'];
-  const databases = ['MongoDB', 'MySQL'];
-  const toolsAndPlatforms = ['Git', 'Github', 'VSCode', 'Vercel', 'Netlify'];
-  const apiTesting = ['Postman'];
+  const backendSkills = ['Node.js', 'Express.js', 'Spring Boot', 'Spring Data JPA', 'Hibernate', 'Spring Security'];
+  const databases = ['MySQL', 'MongoDB', 'PostgreSQL'];
+  const toolsAndPlatforms = ['Git', 'Github', 'VSCode', 'IntelliJ IDEA', 'Maven', 'Gradle', 'Vercel', 'Netlify'];
+  const otherSkills = ['Postman', 'RESTful APIs', 'DSA', 'Machine Learning'];
 
   return (
     <section id='about' className='min-h-screen flex items-center justify-center py-20 bg-black text-white'>
@@ -66,14 +77,14 @@ const About = () => {
             </div>
 
             <div className='rounded-xl p-6 hover:-translate-y-1 transition-all'>
-              <h3 className='text-xl font-bold mb-4'>Frontend</h3>
+              <h3 className='text-xl font-bold mb-4'>Frontend Development</h3>
               <div className='flex flex-wrap gap-2'>
                 {frontendSkills.map(renderTechItem)}
               </div>
             </div>
 
             <div className='rounded-xl p-6 hover:-translate-y-1 transition-all'>
-              <h3 className='text-xl font-bold mb-4'>Backend</h3>
+              <h3 className='text-xl font-bold mb-4'>Backend Development</h3>
               <div className='flex flex-wrap gap-2'>
                 {backendSkills.map(renderTechItem)}
               </div>
@@ -94,37 +105,10 @@ const About = () => {
             </div>
 
             <div className='rounded-xl p-6 hover:-translate-y-1 transition-all'>
-              <h3 className='text-xl font-bold mb-4'>API Testing</h3>
+              <h3 className='text-xl font-bold mb-4'>Other Skills</h3>
               <div className='flex flex-wrap gap-2'>
-                {apiTesting.map(renderTechItem)}
+                {otherSkills.map(renderTechItem)}
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Education Section */}
-        <div className='mt-12'>
-          <h3 className='text-xl font-bold mb-4 text-center'>Education</h3>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-6'>
-            <div className='p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all'>
-              <ul className='list-disc list-inside text-gray-300 space-y-2'>
-                <li>
-                  <strong>BCA</strong> - Vidyasagar University (2019–2022)
-                </li>
-                <li>
-                  Relevant Courseworks: C, C++, Data Structures, Operating System, Computer Network
-                </li>
-              </ul>
-            </div>
-            <div className='p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all'>
-              <ul className='list-disc list-inside text-gray-300 space-y-2'>
-                <li>
-                  <strong>MCA</strong> - Vidyasagar University (2023–2025)
-                </li>
-                <li>
-                  Relevant Courseworks: Java, DSA, Web Development, Machine Learning, AI
-                </li>
-              </ul>
             </div>
           </div>
         </div>
