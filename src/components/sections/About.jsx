@@ -25,7 +25,7 @@ const techLogos = {
 
   Git: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
   Github: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
-  'VSCode': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+  VSCode: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
   'IntelliJ IDEA': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg',
   Maven: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg',
   Gradle: 'https://gradle.org/images/gradle-knowledge-graph-logo.png',
@@ -36,6 +36,9 @@ const techLogos = {
   'RESTful APIs': 'https://cdn-icons-png.flaticon.com/512/2965/2965358.png',
   DSA: 'https://cdn-icons-png.flaticon.com/512/2721/2721292.png',
   'Machine Learning': 'https://cdn-icons-png.flaticon.com/512/1048/1048947.png',
+
+  // Education logos
+  Education: 'https://cdn-icons-png.flaticon.com/512/3135/3135810.png',
 };
 
 const renderTechItem = (tech) => (
@@ -56,6 +59,21 @@ const About = () => {
   const toolsAndPlatforms = ['Git', 'Github', 'VSCode', 'IntelliJ IDEA', 'Maven', 'Gradle', 'Vercel', 'Netlify'];
   const otherSkills = ['Postman', 'RESTful APIs', 'DSA', 'Machine Learning'];
 
+  const education = [
+    {
+      degree: 'Master of Computer Applications (MCA)',
+      institute: 'Vidyasagar University',
+      year: '2025',
+      cgpa: '9.05',
+    },
+    {
+      degree: 'Bachelor of Computer Applications (BCA)',
+      institute: 'Kharagpur College',
+      year: '2022',
+      cgpa: '7.8',
+    },
+  ];
+
   return (
     <section id='about' className='min-h-screen flex items-center justify-center py-20 bg-black text-white'>
       <div className='max-w-4xl mx-auto px-4'>
@@ -68,6 +86,24 @@ const About = () => {
             Passionate developer focused on building efficient, user-friendly web applications. Dedicated to continuous learning and delivering clean, scalable solutions.
           </p>
 
+          {/* Education Section */}
+          <div className='rounded-xl p-6 hover:-translate-y-1 transition-all mb-8'>
+            <h3 className='text-xl font-bold mb-4'>Education</h3>
+            <div className='space-y-4'>
+              {education.map((edu, index) => (
+                <div key={index} className='flex items-start gap-3 bg-blue-500/10 p-3 rounded-lg hover:bg-blue-500/20 transition'>
+                  <img src={techLogos.Education} alt="Education" className='w-8 h-8 mt-1' />
+                  <div>
+                    <p className='font-semibold text-white'>{edu.degree}</p>
+                    <p className='text-gray-300 text-sm'>{edu.institute} • {edu.year}</p>
+                    <p className='text-gray-400 text-sm'>CGPA: {edu.cgpa}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Skills Grid */}
           <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
             <div className='rounded-xl p-6 hover:-translate-y-1 transition-all'>
               <h3 className='text-xl font-bold mb-4'>Programming Languages</h3>
