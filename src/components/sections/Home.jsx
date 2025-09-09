@@ -41,21 +41,19 @@ const Home = () => {
         </h1>
         <TypeAnimation
           sequence={[
-            "I am a full stack web developer",
+            "I am a Full Stack Developer",
             2000,
             "",
-            "I am a full stack web developer",
+            "I am a Software Developer",
             2000,
           ]}
           wrapper="span"
           speed={50}
-          className="text-xl text-blue-400 font-medium"
+          className="text-2xl text-blue-400 font-medium"
           repeat={Infinity}
         />
         <p className="text-gray-400 mt-6 max-w-md mx-auto md:mx-0">
-          I’m a passionate and detail-oriented full-stack developer focused on
-          building responsive, user-friendly, and scalable web applications. I
-          enjoy turning ideas into functional digital experiences.
+          Full Stack Developer / Software Developer with a strong Computer Science background, skilled in the MERN stack (MongoDB, Express.js, React.js, Node.js) and Java/Spring Boot. Experienced in RESTful APIs, authentication, databases (MySQL, PostgreSQL, MongoDB), and modern UI frameworks (Tailwind CSS, Bootstrap). Proficient with Git/GitHub, Postman, Maven, Gradle, Vercel, and Netlify, with a focus on delivering clean, scalable, and efficient web applications.
         </p>
 
         <div className="flex mt-8 justify-center md:justify-start space-x-4">
