@@ -53,7 +53,7 @@ const Home = () => {
           repeat={Infinity}
         />
         <p className="text-gray-400 mt-6 max-w-md mx-auto md:mx-0">
-          Full Stack Developer / Software Developer with a strong Computer Science background, skilled in the MERN stack (MongoDB, Express.js, React.js, Node.js) and Java/Spring Boot. Experienced in RESTful APIs, authentication, databases (MySQL, PostgreSQL, MongoDB), and modern UI frameworks (Tailwind CSS, Bootstrap). Proficient with Git/GitHub, Postman, Maven, Gradle, Vercel, and Netlify, with a focus on delivering clean, scalable, and efficient web applications.
+          Full Stack Developer skilled in MERN stack and Java/Spring Boot, with expertise in RESTful APIs, authentication, databases (MySQL, PostgreSQL, MongoDB), and modern UI frameworks. Proficient in Git/GitHub, Postman, Maven, Gradle, Vercel, and Netlify, with a focus on building clean, scalable, and efficient web applications.
         </p>
 
         <div className="flex mt-8 justify-center md:justify-start space-x-4">
