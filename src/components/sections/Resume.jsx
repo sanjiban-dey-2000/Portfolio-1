@@ -9,7 +9,7 @@ const Resume = () => {
         {/* CV Preview as Image */}
         <div className="flex justify-center">
           <img
-            src="/CV.jpg" // Your CV image
+            src="/SANJIBAN_DEY_RESUME.jpg" // Your CV image
             alt="Resume Preview"
             className="w-full max-w-[500px] h-auto rounded-lg shadow-lg object-contain"
           />
@@ -17,7 +17,7 @@ const Resume = () => {
 
         {/* Download Button */}
         <a
-          href="/RESUME.pdf"
+          href="/SANJIBAN_DEY_RESUME.pdf"
           download
           className="mt-6 inline-block bg-blue-600 px-6 py-2 rounded-lg text-white font-medium hover:bg-blue-700 transition"
         >
