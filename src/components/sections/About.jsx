@@ -24,7 +24,9 @@ const techLogos = {
   PostgreSQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
 
   Git: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+  GGit: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
   Github: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+  Jenkins: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg',
   VSCode: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
   'IntelliJ IDEA': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg',
   Maven: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg',
@@ -56,7 +58,7 @@ const About = () => {
   const frontendSkills = ['HTML5', 'CSS', 'TailwindCSS', 'Bootstrap', 'React'];
   const backendSkills = ['Node.js', 'Express.js', 'Spring Boot', 'Spring Data JPA', 'Hibernate', 'Spring Security'];
   const databases = ['MySQL', 'MongoDB', 'PostgreSQL'];
-  const toolsAndPlatforms = ['Git', 'Github', 'VSCode', 'IntelliJ IDEA', 'Maven', 'Gradle', 'Vercel', 'Netlify'];
+  const toolsAndPlatforms = ['Git', 'Github','Jenkins', 'VSCode', 'IntelliJ IDEA', 'Maven', 'Gradle', 'Vercel', 'Netlify'];
   const otherSkills = ['Postman', 'RESTful APIs', 'DSA', 'Machine Learning'];
 
   const education = [
