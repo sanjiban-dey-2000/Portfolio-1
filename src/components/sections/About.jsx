@@ -24,7 +24,6 @@ const techLogos = {
   PostgreSQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
 
   Git: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
-  GGit: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
   Github: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
   Jenkins: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg',
   VSCode: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
@@ -34,12 +33,15 @@ const techLogos = {
   Vercel: 'https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg',
   Netlify: 'https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg',
 
+  // Newly Added
+  Docker: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+  Nginx: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg',
+
   Postman: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
   'RESTful APIs': 'https://cdn-icons-png.flaticon.com/512/2965/2965358.png',
   DSA: 'https://cdn-icons-png.flaticon.com/512/2721/2721292.png',
   'Machine Learning': 'https://cdn-icons-png.flaticon.com/512/1048/1048947.png',
 
-  // Education logos
   Education: 'https://cdn-icons-png.flaticon.com/512/3135/3135810.png',
 };
 
@@ -58,7 +60,14 @@ const About = () => {
   const frontendSkills = ['HTML5', 'CSS', 'TailwindCSS', 'Bootstrap', 'React'];
   const backendSkills = ['Node.js', 'Express.js', 'Spring Boot', 'Spring Data JPA', 'Hibernate', 'Spring Security'];
   const databases = ['MySQL', 'MongoDB', 'PostgreSQL'];
-  const toolsAndPlatforms = ['Git', 'Github','Jenkins', 'VSCode', 'IntelliJ IDEA', 'Maven', 'Gradle', 'Vercel', 'Netlify'];
+
+  // Updated Tools & Platforms (Added Docker & Nginx)
+  const toolsAndPlatforms = [
+    'Git', 'Github', 'Jenkins', 'VSCode', 'IntelliJ IDEA',
+    'Maven', 'Gradle', 'Vercel', 'Netlify',
+    'Docker', 'Nginx'
+  ];
+
   const otherSkills = ['Postman', 'RESTful APIs', 'DSA', 'Machine Learning'];
 
   const education = [
@@ -85,7 +94,8 @@ const About = () => {
 
         <div className='rounded-xl p-8 border-white/10 border hover:translate-y-1 transition-all'>
           <p className='text-gray-300 mb-6'>
-            Passionate developer focused on building efficient, user-friendly web applications. Dedicated to continuous learning and delivering clean, scalable solutions.
+            Passionate developer focused on building efficient, user-friendly web applications.
+            Dedicated to continuous learning and delivering clean, scalable solutions.
           </p>
 
           {/* Education Section */}
