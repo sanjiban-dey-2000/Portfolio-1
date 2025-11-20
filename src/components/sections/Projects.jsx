@@ -14,7 +14,7 @@ const projects = [
       "Git",
       "Postman",
     ],
-    thumbnail: "/stockmini.png", // Place your image in public/images/
+    thumbnail: "/stockmini.png",
     link: "https://github.com/sanjiban-dey-2000/StockMini",
   },
   {
@@ -67,11 +67,12 @@ const projects = [
     link: "https://github.com/sanjiban-dey-2000/CineMate",
   },
   {
-    name: "BlogNest",
-    description: "A blog application using server-side scripting",
-    techStack: ["EJS", "Node.js", "Express.js", "MongoDB", "Git", "Postman"],
-    thumbnail: "/blognest.png",
-    link: "https://github.com/sanjiban-dey-2000/BlogNest",
+    name: "InkSpire",
+    description:
+      "A modern full stack blog application with user authentication, CRUD posts, rich text editor, and dynamic content rendering.",
+    techStack: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Git", "Postman"],
+    thumbnail: "/inkspire.png", // replace with your actual image
+    link: "https://inkspire-frontend-lemon.vercel.app/",
   },
   {
     name: "TandoorTales",
@@ -118,6 +119,7 @@ const Projects = () => {
 
               <h3 className="text-xl font-bold mb-2">{project.name}</h3>
               <p className="text-gray-400 mb-4">{project.description}</p>
+
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.techStack.map((tech, i) => (
                   <span
@@ -128,6 +130,7 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+
               <a
                 href={project.link}
                 target="_blank"
